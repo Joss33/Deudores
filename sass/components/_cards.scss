@@ -3,7 +3,6 @@
   flex-wrap: wrap;
   justify-content: center;
   width: 1200px;
-  // align-items: center;
 
   .row {
     display: flex;
@@ -17,24 +16,21 @@
     box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
     &__content {
       width: 100%;
-      // margin: auto;
-      padding: 20px;
-      // box-sizing: border-box;
+      padding: 15px;
 
       .input-group {
         display: flex;
         align-items: center;
-        width: 100%;
         margin-bottom: 10px;
 
         label[name="cuotaDiaria"] {
           font-family: $font-family;
           font-size: $font-size-text;
           color: $primary;
-          width: 45%;
+          width: 50%;
         }
         input[name="cuotaDiaria"] {
-          @include input-group(55%);
+          @include input-group(50%);
         }
         label[name="total"],
         label[name="Name"],
@@ -46,7 +42,7 @@
           @include text-label;
         }
         input[name="total"] {
-          @include input-group(45%);
+          @include input-group(73%);
         }
 
         input[name="Name"] {
@@ -54,23 +50,23 @@
         }
 
         input[name="direction"] {
-          @include input-group(75%);
+          @include input-group(63%);
         }
 
         input[name="phone"] {
-          @include input-group(45%);
+          @include input-group(83%);
         }
 
         input[name="day"] {
-          @include input-group(33.33333%);
+          @include input-group(74%);
         }
 
         input[name="month"] {
-          @include input-group(33.33333%);
+          @include input-group(74%);
         }
 
         input[name="year"] {
-          @include input-group(33.33333%);
+          @include input-group(74%);
         }
       }
     }

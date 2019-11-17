@@ -68,7 +68,7 @@ td {
     box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2); }
     .cards .card__content {
       width: 100%;
-      padding: 20px; }
+      padding: 15px; }
       .cards .card__content .input-group {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -76,18 +76,17 @@ td {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        width: 100%;
         margin-bottom: 10px; }
         .cards .card__content .input-group label[name="cuotaDiaria"] {
           font-family: "Roboto", Arial;
           font-size: 14px;
           color: #303f9f;
-          width: 45%; }
+          width: 50%; }
         .cards .card__content .input-group input[name="cuotaDiaria"] {
           font-family: "Roboto", Arial;
           font-size: 14px;
           color: #303f9f;
-          width: 55%;
+          width: 50%;
           outline: none;
           background: none;
           border: none;
@@ -106,7 +105,7 @@ td {
           font-family: "Roboto", Arial;
           font-size: 14px;
           color: #303f9f;
-          width: 45%;
+          width: 73%;
           outline: none;
           background: none;
           border: none;
@@ -124,7 +123,7 @@ td {
           font-family: "Roboto", Arial;
           font-size: 14px;
           color: #303f9f;
-          width: 75%;
+          width: 63%;
           outline: none;
           background: none;
           border: none;
@@ -133,7 +132,7 @@ td {
           font-family: "Roboto", Arial;
           font-size: 14px;
           color: #303f9f;
-          width: 45%;
+          width: 83%;
           outline: none;
           background: none;
           border: none;
@@ -142,7 +141,7 @@ td {
           font-family: "Roboto", Arial;
           font-size: 14px;
           color: #303f9f;
-          width: 33.33333%;
+          width: 74%;
           outline: none;
           background: none;
           border: none;
@@ -151,7 +150,7 @@ td {
           font-family: "Roboto", Arial;
           font-size: 14px;
           color: #303f9f;
-          width: 33.33333%;
+          width: 74%;
           outline: none;
           background: none;
           border: none;
@@ -160,7 +159,7 @@ td {
           font-family: "Roboto", Arial;
           font-size: 14px;
           color: #303f9f;
-          width: 33.33333%;
+          width: 74%;
           outline: none;
           background: none;
           border: none;
