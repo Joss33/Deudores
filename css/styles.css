@@ -77,6 +77,16 @@ td {
         -ms-flex-align: center;
         align-items: center;
         margin-bottom: 10px; }
+        .cards .card__content .input-group .input-group[name="cuotaDiaria"] {
+          width: 65%; }
+        .cards .card__content .input-group .input-group[name="total"] {
+          width: 35%; }
+        .cards .card__content .input-group .input-group[name="Name"] {
+          width: 100%; }
+        .cards .card__content .input-group .input-group[name="direction"] {
+          width: 70%; }
+        .cards .card__content .input-group .input-group[name="phone"] {
+          width: 30%; }
         .cards .card__content .input-group label[name="cuotaDiaria"] {
           font-family: "Roboto", Arial;
           font-size: 14px;

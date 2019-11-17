@@ -23,6 +23,22 @@
         align-items: center;
         margin-bottom: 10px;
 
+        .input-group[name="cuotaDiaria"] {
+          width: 65%;
+        }
+        .input-group[name="total"] {
+          width: 35%;
+        }
+        .input-group[name="Name"] {
+          width: 100%;
+        }
+        .input-group[name="direction"] {
+          width: 70%;
+        }
+        .input-group[name="phone"] {
+          width: 30%;
+        }
+
         label[name="cuotaDiaria"] {
           font-family: $font-family;
           font-size: $font-size-text;
