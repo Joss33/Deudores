@@ -1,0 +1,31 @@
+.card__Table {
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+table {
+  width: 50%;
+  background: none;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th {
+  background-color: #8bb5d4;
+  height: 20px;
+  color: $primary;
+  font-family: $font-family;
+  font-size: $font-size-text;
+  border: 1px solid $primary;
+}
+
+td {
+  border: 1px solid $primary;
+  // color: rgba(100, 100, 100, 60);
+  height: 20px;
+  // border: 0.5px solid rgba(240, 240, 240, 10);
+}
+.numberTable {
+  background-color: #8bb5d4;
+  color: $primary;
+}

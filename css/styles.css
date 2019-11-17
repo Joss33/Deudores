@@ -1,3 +1,265 @@
-body {
+* {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: "Roboto", Arial; }
+
+.card__Table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+table {
+  width: 50%;
+  background: none;
+  border-collapse: collapse;
+  text-align: center; }
+
+th {
+  background-color: #8bb5d4;
+  height: 20px;
+  color: #303f9f;
+  font-family: "Roboto", Arial;
+  font-size: 14px;
+  border: 1px solid #303f9f; }
+
+td {
+  border: 1px solid #303f9f;
+  height: 20px; }
+
+.numberTable {
+  background-color: #8bb5d4;
+  color: #303f9f; }
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 1200px; }
+  .cards .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .cards .card {
+    position: relative;
+    width: 400px;
+    height: 550px;
+    margin: 10px;
+    border-radius: 3px;
+    -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2); }
+    .cards .card__content {
+      width: 100%;
+      padding: 20px; }
+      .cards .card__content .input-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 10px; }
+        .cards .card__content .input-group label[name="cuotaDiaria"] {
+          font-family: "Roboto", Arial;
+          font-size: 14px;
+          color: #303f9f;
+          width: 45%; }
+        .cards .card__content .input-group input[name="cuotaDiaria"] {
+          font-family: "Roboto", Arial;
+          font-size: 14px;
+          color: #303f9f;
+          width: 55%;
+          outline: none;
+          background: none;
+          border: none;
+          border-bottom: 1px solid #303f9f; }
+        .cards .card__content .input-group label[name="total"],
+        .cards .card__content .input-group label[name="Name"],
+        .cards .card__content .input-group label[name="direction"],
+        .cards .card__content .input-group label[name="phone"],
+        .cards .card__content .input-group label[name="day"],
+        .cards .card__content .input-group label[name="month"],
+        .cards .card__content .input-group label[name="year"] {
+          font-family: "Roboto", Arial;
+          font-size: 14px;
+          color: #303f9f; }
+        .cards .card__content .input-group input[name="total"] {
+          font-family: "Roboto", Arial;
+          font-size: 14px;
+          color: #303f9f;
+          width: 45%;
+          outline: none;
+          background: none;
+          border: none;
+          border-bottom: 1px solid #303f9f; }
+        .cards .card__content .input-group input[name="Name"] {
+          font-family: "Roboto", Arial;
+          font-size: 14px;
+          color: #303f9f;
+          width: 100%;
+          outline: none;
+          background: none;
+          border: none;
+          border-bottom: 1px solid #303f9f; }
+        .cards .card__content .input-group input[name="direction"] {
+          font-family: "Roboto", Arial;
+          font-size: 14px;
+          color: #303f9f;
+          width: 75%;
+          outline: none;
+          background: none;
+          border: none;
+          border-bottom: 1px solid #303f9f; }
+        .cards .card__content .input-group input[name="phone"] {
+          font-family: "Roboto", Arial;
+          font-size: 14px;
+          color: #303f9f;
+          width: 45%;
+          outline: none;
+          background: none;
+          border: none;
+          border-bottom: 1px solid #303f9f; }
+        .cards .card__content .input-group input[name="day"] {
+          font-family: "Roboto", Arial;
+          font-size: 14px;
+          color: #303f9f;
+          width: 33.33333%;
+          outline: none;
+          background: none;
+          border: none;
+          border-bottom: 1px solid #303f9f; }
+        .cards .card__content .input-group input[name="month"] {
+          font-family: "Roboto", Arial;
+          font-size: 14px;
+          color: #303f9f;
+          width: 33.33333%;
+          outline: none;
+          background: none;
+          border: none;
+          border-bottom: 1px solid #303f9f; }
+        .cards .card__content .input-group input[name="year"] {
+          font-family: "Roboto", Arial;
+          font-size: 14px;
+          color: #303f9f;
+          width: 33.33333%;
+          outline: none;
+          background: none;
+          border: none;
+          border-bottom: 1px solid #303f9f; }
+    .cards .card .text-warning {
+      margin-top: 5px;
+      margin-left: 22px;
+      padding-right: 20px;
+      font-size: 10px;
+      font-family: "Roboto", Arial;
+      color: #303f9f; }
+    .cards .card__bottom {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      align-items: flex-end;
+      width: 100%; }
+      .cards .card__bottom .btn-options {
+        width: 35px;
+        height: 35px;
+        border: none;
+        background: none;
+        color: #2e2e2e;
+        cursor: pointer;
+        border-bottom-right-radius: 3px;
+        outline: none; }
+        .cards .card__bottom .btn-options:active, .cards .card__bottom .btn-options:hover {
+          background: rgba(0, 0, 0, 0.1);
+          outline: none; }
+    .cards .card .panel__option {
+      position: absolute;
+      width: 100%;
+      top: 10px;
+      display: none;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      background: #b4e2fa; }
+      .cards .card .panel__option .panel__btn-panel {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+        .cards .card .panel__option .panel__btn-panel .btn-panel {
+          background: none;
+          border: none;
+          cursor: pointer;
+          outline: none;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: start;
+          -ms-flex-pack: start;
+          justify-content: flex-start;
+          padding-left: 10px;
+          height: 40px; }
+          .cards .card .panel__option .panel__btn-panel .btn-panel i {
+            margin-right: 10px; }
+          .cards .card .panel__option .panel__btn-panel .btn-panel:hover, .cards .card .panel__option .panel__btn-panel .btn-panel:active {
+            background: rgba(0, 0, 0, 0.1); }
+      .cards .card .panel__option .panel__btn-colors {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 60%;
+        -ms-flex-item-align: center;
+        align-self: center; }
+        .cards .card .panel__option .panel__btn-colors .btn-colors {
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          border: 0.5px solid #c4c1c1;
+          cursor: pointer; }
+
+.card--green {
+  background: #bbf6bd; }
+
+.card--red {
+  background: #fca9bb; }
+
+.card--blue {
+  background: #b4e2fa; }
+
+.card--yellow {
+  background: #f7ea64; }

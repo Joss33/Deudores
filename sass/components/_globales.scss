@@ -1,0 +1,39 @@
+// Color Variables
+// $color-text: #29587e;
+
+$primary: #303f9f;
+$light-primary: #bbdefb;
+$white: #f2f2f2;
+$divider: #b6b6b6;
+$error: #d32f2f;
+$border: 1px;
+
+// Typo
+$font-family: "Roboto", Arial;
+$font-size-text: 14px;
+
+// Cards color
+
+$card-green: #bbf6bd;
+$card-red: #fca9bb;
+$card-yellow: #f7ea64;
+$card-blue: #b4e2fa;
+
+@mixin input-group($size) {
+  // display: flex;
+  font-family: $font-family;
+  font-size: $font-size-text;
+  color: $primary;
+  width: $size;
+  outline: none;
+  // padding: 15px;
+  background: none;
+  border: none;
+  border-bottom: $border solid $primary;
+}
+
+@mixin text-label {
+  font-family: $font-family;
+  font-size: $font-size-text;
+  color: $primary;
+}

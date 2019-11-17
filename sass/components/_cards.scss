@@ -1,0 +1,175 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 1200px;
+  // align-items: center;
+
+  .row {
+    display: flex;
+  }
+  .card {
+    position: relative;
+    width: 400px;
+    height: 550px;
+    margin: 10px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+    &__content {
+      width: 100%;
+      // margin: auto;
+      padding: 20px;
+      // box-sizing: border-box;
+
+      .input-group {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 10px;
+
+        label[name="cuotaDiaria"] {
+          font-family: $font-family;
+          font-size: $font-size-text;
+          color: $primary;
+          width: 45%;
+        }
+        input[name="cuotaDiaria"] {
+          @include input-group(55%);
+        }
+        label[name="total"],
+        label[name="Name"],
+        label[name="direction"],
+        label[name="phone"],
+        label[name="day"],
+        label[name="month"],
+        label[name="year"] {
+          @include text-label;
+        }
+        input[name="total"] {
+          @include input-group(45%);
+        }
+
+        input[name="Name"] {
+          @include input-group(100%);
+        }
+
+        input[name="direction"] {
+          @include input-group(75%);
+        }
+
+        input[name="phone"] {
+          @include input-group(45%);
+        }
+
+        input[name="day"] {
+          @include input-group(33.33333%);
+        }
+
+        input[name="month"] {
+          @include input-group(33.33333%);
+        }
+
+        input[name="year"] {
+          @include input-group(33.33333%);
+        }
+      }
+    }
+    .text-warning {
+      margin-top: 5px;
+      margin-left: 22px;
+      padding-right: 20px;
+      font-size: 10px;
+      font-family: $font-family;
+      color: $primary;
+    }
+
+    &__bottom {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      width: 100%;
+      // height: 35px;
+
+      // padding: 0px 0px 0px 2px;
+
+      .btn-options {
+        width: 35px;
+        height: 35px;
+        border: none;
+        background: none;
+        color: rgb(46, 46, 46);
+        cursor: pointer;
+        border-bottom-right-radius: 3px;
+        outline: none;
+        &:active,
+        &:hover {
+          background: rgba(0, 0, 0, 0.1);
+          outline: none;
+        }
+      }
+    }
+    .panel__option {
+      position: absolute;
+      width: 100%;
+      top: 10px;
+      display: none;
+      flex-direction: column;
+      justify-content: flex-start;
+      background: $card-blue;
+
+      .panel__btn-panel {
+        display: flex;
+        flex-direction: column;
+
+        .btn-panel {
+          background: none;
+          border: none;
+          cursor: pointer;
+          outline: none;
+          display: flex;
+          justify-content: flex-start;
+          padding-left: 10px;
+          height: 40px;
+          i {
+            margin-right: 10px;
+          }
+          &:hover,
+          &:active {
+            background: rgba(0, 0, 0, 0.1);
+          }
+        }
+      }
+
+      .panel__btn-colors {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 60%;
+        align-self: center;
+
+        .btn-colors {
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          border: 0.5px solid rgb(196, 193, 193);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.card--green {
+  background: $card-green;
+}
+.card--red {
+  background: $card-red;
+}
+
+.card--blue {
+  background: $card-blue;
+}
+
+.card--yellow {
+  background: $card-yellow;
+}
