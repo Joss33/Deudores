@@ -20,7 +20,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding-left: 20px;
-  padding-right: 20px; }
+  padding-right: 20px;
+  border-radius: 3px; }
 
 table {
   width: 50%;
